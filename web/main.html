@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Рассчёт индексов</title>
+
+	<script src="eel.js"></script>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<div id="left">
+		<div id="stocks">
+			<div class="stock">
+				<input id="name1" type="text" placeholder="Название инструмента" required="">
+				<input id="part1" class="part" type="text" placeholder="Доля" required="">
+			</div>
+		</div>
+		<div id="for_new">
+			<button id="add_stock">Добавить инструмент</button>
+			<button id="let_calc">Вычислить индекс</button>
+		</div>
+		<div id="saving_index">
+			<input id="NewIndexName" type="text" placeholder="Имя индекса" required="">
+			<button id="SaveIndex">Сохранить</button>
+			<datalist id="savedIndexes">
+				
+			</datalist>
+		</div>
+	</div>
+	<div id="right">
+		<div id="savings">
+			<input id="select_saved_index" type="text" list="savedIndexes" placeholder="Выберите готовый" required="">
+			<button id="get_index">Вычислить индекс</button>
+		</div>
+	</div>
+	<div id="result"></div>
+	<script src="script.js"></script>
+
+</body>
+</html>
